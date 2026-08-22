@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Bottle Cap', 'Cone Cap', 'Leaf', 'Netting', 'Plastic Bag', 'Plastic Strand', 'Sponge']
+
+roboflow:
+  workspace: brittany-nguyen
+  project: trash-tank-yolov11
+  version: 4
+  license: MIT
+  url: https://universe.roboflow.com/brittany-nguyen/trash-tank-yolov11/dataset/4
