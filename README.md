@@ -69,7 +69,9 @@ Mitigation Strategies:
   * Total Emissions:
 
 # Prerequisites
-* Install a compatible version of PyTorch for your GPU
+* Install a compatible version of `PyTorch` for your GPU
+* Either download the dataset directly from this repo, or use RoboFlow pipeline in the notebook
+* Visual C++ and ODBC Driver is needed if you plan to use a SQL Server Database
 
 ```bash
 # Dependencies for YOLO model
@@ -83,6 +85,6 @@ Mitigation Strategies:
 ```
 
 ```bash
-#
-!pip install tensorboard pathlib
+# General installations
+!pip install ipython torch torchvision tensorboard albumenations open_cv 
 ```
