@@ -86,5 +86,5 @@ Mitigation Strategies:
 
 ```bash
 # General installations
-!pip install ipython torch torchvision tensorboard albumenations open_cv 
+!pip install ipython torch torchvision tensorboard albumentations opencv-python
 ```
