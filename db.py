@@ -127,8 +127,8 @@ def load_dataset(cursor, dataset_dir):
                 if not line:
                     continue
                 parts = line.split()
-                class_id = int(parts[0])
-                x_center, y_center, box_w, box_h = (float(p) for p in parts[1:5])
+                classID = int(parts[0])
+                xCenter, yCenter, boxWidth, boxHeight = (float(p) for p in parts[1:5])
                 labelRows.append((imageID, classID, xCenter, yCenter, boxWidth, boxHeight))
  
     # Bulk insert labels
