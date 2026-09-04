@@ -218,5 +218,10 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Dataset
-./Trash-Tank-YOLOv11-4/
+/Trash-Tank-YOLOv11-4/
 .vscode/
+yolo11n.pt
+yolo26n.pt
+reset.sql
+runs/
+benchmark.py
