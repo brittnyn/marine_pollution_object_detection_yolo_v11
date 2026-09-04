@@ -43,7 +43,6 @@ END;
 IF OBJECT_ID('dbo.Label', 'U') IS NULL
 BEGIN
     CREATE TABLE Label(
-        labelID     INT IDENTITY (1,1) PRIMARY KEY,
         imageID     INT NOT NULL,
         classID     INT NOT NULL,
         xCenter     FLOAT NOT NULL,
@@ -68,7 +67,7 @@ EXEC('
         IF NOT EXISTS(
             SELECT 1
             FROM dbo.Class
-            WHERE classID = @classID or classNAME
+            WHERE classID = @classID OR className = @className
         )
         BEGIN
             INSERT INTO Class(classID, className)
@@ -88,7 +87,14 @@ EXEC('
         INSERT INTO Image (filePath, splitID)
         VALUES (@filePath, @splitID);
 
-        SELECT SCOPE_IDENTITY() AS imageID;
+        If @@ROWCOUNT = 0
+        BEGIN
+            SELECT imageID FROM Image WHERE filePath = @filePath;
+        END
+        ELSE
+        BEGIN
+            SELECT SCOPE_IDENTITY() AS imageID;
+        END
     END;
 ');
 
