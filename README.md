@@ -5,9 +5,10 @@ YOLOv11 Trash Object Detection Model
 * Description:  
 A real-time tracking system using a `YOLOv11` model to automate high-resolution pollution monitoring. It trains on the image dataset from `OceanCV` of trash in a water tank. This project aims to assist marine scientists, policy-making, and the protection of ocean life.
 
+[Tank Video Demo](images/demo.gif)
 
 ### Intended Use
-Primary Use Case:  
+Primary Use Case: 
 * Object detection of trash in water to monitor marine pollution  
   
 Future Applications:
@@ -21,7 +22,7 @@ Advantages:
 * Improved data accuracy in count and classification, removing human error and personal bias
 
 ### Metrics 
-Overall mAP: 0.9524
+Overall mAP: `0.9524`
   
 Class-Specific mAP
 * Bottle Cap: 0.991
@@ -32,8 +33,8 @@ Class-Specific mAP
 * Plastic Strand: 0.985
 * Sponge: 0.995
 
-Average latency: 10.76 ms  
-FPS: 92.97
+Average latency: `10.76` ms  
+FPS: `92.97`
 
 ### Evaluation
 Dataset Details:
@@ -41,8 +42,8 @@ Dataset Details:
 * Total Number of Class: `7`
 * Total Count of Annotations: `3,952`
 * Training Configuration:
-  * Image Size: 
-  * Batch Size:
+  * Image Size: `640x640`
+  * Batch Size: `64`
   * Optimizer: SGD (`lr=0.01`, `momentum=0.9`)
   * Hardware: AMD 7700XT GPU using ROCm and WSL
 * Augmentations:
