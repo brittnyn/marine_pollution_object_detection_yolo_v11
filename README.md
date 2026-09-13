@@ -36,8 +36,8 @@ Class-Specific mAP
 Average latency: `10.76` ms  
 FPS: `92.97`  
   
-![Results](runs/detect/train/results.png)
-![Normalized Confusion Matrix](runs/detect/train/confusion_matrix_normalized.png)  
+![Results](images/results.png)
+![Normalized Confusion Matrix](images/confusion_matrix_normalized.png)  
 
 ### Evaluation
 Dataset Details:
