@@ -5,6 +5,8 @@ YOLOv11 Trash Object Detection Model
 * Description:  
 A real-time tracking system using a `YOLOv11` model to automate high-resolution pollution monitoring. It trains on the image dataset from `OceanCV` of trash in a water tank. This project aims to assist marine scientists, policy-making, and the protection of ocean life.
 
+![Tank Video Demo](images/demo.gif)
+
 ### Intended Use
 Primary Use Case: 
 * Object detection of trash in water to monitor marine pollution  
