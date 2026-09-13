@@ -68,13 +68,6 @@ Mitigation Strategies:
 * Rebalance Train/Validation splits
 * Appropriate representative classes
 
-### Environmental Impact
-  * Compute Location:
-  * Carbon Efficiency:
-  * Hardware:
-  * Compute Duration:
-  * Total Emissions:
-
 # Prerequisites
 * Install a compatible version of `PyTorch` for your GPU
 * Either download the dataset directly from this repo, or use RoboFlow pipeline in the notebook
